@@ -18,7 +18,7 @@
   function addArticles () {
     const data = JSON.parse(this.responseText);
     if (data.response && data.response.docs && data.response.docs != 0) {
-      const text = '<ul>' + data.response.docs.map(article => `<li><p>${article.snippet}</p><p>${article.web_url}</p></li>`).join('') + '</ul>';
+      const text = '<ul>' + data.response.docs.map(article => `<li><p><a href="${article.web_url}">${article.snippet}</a></p></li>`).join('') + '</ul>';
       responseContainer.insertAdjacentHTML('beforeend', text);
     }
     else {
