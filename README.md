@@ -2,24 +2,13 @@
 
 This is the repo for [Udacity's Ajax course](). The course covers making asynchronous requests using three different methods:
 
-* the XHR object
-* jQuery's `.ajax()` method
-* the Fetch API
+####To Send An Async Request
+* create an XHR object with the XMLHttpRequest constructor function
+* use the .open() method - set the HTTP method and the URL of the resource to be fetched
+* set the .onload property - set this to a function that will run upon a successful fetch
+* set the .onerror property - set this to a function that will run when an error occurs
+* use the .send() method - send the request
 
-The same project is built with each of these techniques. You'll find one folder for each.
+####To Use The Response
+* use the .responseText property - holds the text of the async request's response
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Creator](#creators)
-
-## Instructions
-
-There are no special instructions for this project.
-
-## Creators
-
-**Richard Kalehoff**
-
-* [https://twitter.com/richardkalehoff](https://twitter.com/richardkalehoff)
-* [https://github.com/richardkalehoff](https://github.com/richardkalehoff)
